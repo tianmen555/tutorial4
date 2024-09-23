@@ -19,10 +19,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: read
-      security-events: write  # 这行是关键，允许提交依赖关系
-
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 21
